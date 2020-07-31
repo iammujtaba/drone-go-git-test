@@ -13,21 +13,21 @@ steps:
       - go test
 
   - name: build
-  image: golang
-  commands:
-    - go get
-    - go build -o output
-    - chmod +x output
+    image: golang
+    commands:
+      - go get
+      - go build -o output
+      - chmod +x output
 
   - name: run
-  image: golang
-  commands:
-    - go get
-    - go build -o output
-    - chmod +x output
-    - ./output
+    image: golang
+    commands:
+      - go get
+      - go build -o output
+      - chmod +x output
+      - ./output
 
-    
+
 # steps:
 #   - name: report
 #     image: golang
